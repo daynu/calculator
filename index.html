@@ -10,34 +10,40 @@
 <body>
     <div id = "calculator">
         <div id="screen">
-            
+            <div id = "main"></div>
+            <div id = "current"></div>
+
         </div>
         <div id="buttons">
+            <div id = 'clear-back'>
+                <button id="clear">CLEAR</button>
+                <button id = "backspace"> <- BACKSPASE</button>
+            </div>
             <div id="numbers">
                 <div class="row" id = "row-one">
                     <button value = "1" class="number" id="1">1</button>
                     <button value = "2" class="number" id="2">2</button>
                     <button value = "3" class="number" id="3">3</button>
-                    <button id="plus">+</button>
+                    <button class="operations" value="+" id="plus">+</button>
                 </div>
                 <div class="row" id = "row-two">
                     <button value = "4" class="number" id="4">4</button>
                     <button value = "5" class="number" id="5">5</button>
                     <button value = "6" class="number" id="6">6</button>
-                    <button id="minus">-</button>
+                    <button class="operations" value="-" id="minus">-</button>
                 </div>
                 <div class="row" id="row-three">
                     <button value = "7" class="number" id="7">7</button>
                     <button value = "8" class="number" id="8">8</button>
                     <button value = "9" class="number" id="9">9</button>
-                    <button id="multiply">x</button> 
+                    <button class="operations" value="x" id="multiply">x</button> 
                      
                 </div>
                 <div class="row" id = "row-four">
                     <button value = "0" class="number" id="0">0</button>
-                    <button id = "dot">.</button>
-                    <button id = "equals">=</button>
-                    <button id="divide">÷</button>
+                    <button class="number" value="." id = "dot">.</button>
+                    <button value="=" id = "equals">=</button>
+                    <button class="operations" value="÷" id="divide">÷</button>
                 </div>
                 
             </div>

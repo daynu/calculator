@@ -34,7 +34,7 @@ body
     display: flex;
     flex-direction: column;
     width: 25%;
-    min-width: 480px;
+    min-width: 400px;
     aspect-ratio: 1/1;
     border-radius: 2%/2%;
     border: 5px solid black;

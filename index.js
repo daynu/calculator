@@ -2,7 +2,10 @@ let main = document.getElementById('main');
 let numbers = document.querySelectorAll(".number");
 let current = document.getElementById('current');
 let operations = document.querySelectorAll('.operations')
-let numberArray = []
+let equals = document.getElementById("equals")
+let backspace = document.getElementById('backspace');
+let clear = document.getElementById('clear');
+let numberArray = [];
 let result = 0;
 let lastOperation = '';
 
@@ -57,8 +60,7 @@ numbers.forEach(function(number)
 }
 )
 
-let equals = document.getElementById("equals")
-let plus = document.getElementById("plus")
+
 
 function compute(operation)
 {
@@ -183,7 +185,7 @@ equals.addEventListener('click', ()=>
             }
 })
 
-let clear = document.getElementById('clear')
+
 
 clear.addEventListener('click', () =>
 {
@@ -193,7 +195,6 @@ clear.addEventListener('click', () =>
     numberArray[1] = null;
 })
 
-let backspace = document.getElementById('backspace');
 
 backspace.addEventListener('click', () =>
 {   

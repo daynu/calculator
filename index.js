@@ -94,9 +94,11 @@ operations.forEach(function(operation)
         {   
             operations.forEach(function(operation)
                 {
-                    operation.style.backgroundColor = 'gray'
+                    operation.style.backgroundColor = 'black'
+                    operation.style.color = 'white';
                 })
-            operation.style.backgroundColor = 'white'
+            operation.style.backgroundColor = 'white';
+            operation.style.color = 'black';
             lastOperation = operation.value;
             if(current.innerHTML != '')
             {
@@ -205,8 +207,13 @@ function toggleOperationBackground(currentOperation)
 {
     operations.forEach(function(operation)
         {   
-            operation.style.backgroundColor = 'gray'
-            if(operation.value == currentOperation) operation.style.backgroundColor = 'white'
+            operation.style.backgroundColor = 'black';
+            operation.style.color = 'white';
+            if(operation.value == currentOperation)
+            {
+                operation.style.backgroundColor = 'white';
+                operation.style.color = 'black'
+            }
         })
 }
 

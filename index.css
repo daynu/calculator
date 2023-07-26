@@ -1,3 +1,9 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    
+}
 
 
 #operations
@@ -15,15 +21,15 @@
     margin-top: 10%;
     margin-bottom: 10%;
     border: 5px solid black;
-    border-radius: 4%/8%;
+    border-radius: 2%/8%;
 }
 
 
 #calculator
 {
-    flex:1;
+
     align-self: center;
-    margin: 17% 25%;
+    margin-top: 5%;
     background-color: gray;
     display: flex;
     flex-direction: column;
@@ -31,6 +37,7 @@
     min-width: 480px;
     aspect-ratio: 1/1;
     border-radius: 2%/2%;
+    border: 5px solid black;
 }
 
 #numbers
@@ -42,9 +49,10 @@
     justify-content: center;
 }
 
-#numbers > button
+#numbers > .row > button
 {
     flex: 1;
+    border-radius: 4%/4%;
 }
 
 button
@@ -52,11 +60,13 @@ button
     width: 20%;
     aspect-ratio: 1/1;
     margin: 2%;
+
 }
 
 .row
 {
     flex: 1;
+    display: flex;
     
 }
 
@@ -86,4 +96,52 @@ button
     aspect-ratio: 4/1;
     height: 20%;
     flex: 1;
+}
+
+
+.number
+{
+    background-color:orange;
+    border : none;
+}
+
+.operations, #equals
+{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.number, .operations, #equals
+{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#clear-back > button
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: black;
+    border: 5px solid orange;
+    border-radius: 3%/10%;
+    font-weight: bold;
+
+}
+
+#main, #current
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.number:hover
+{
+    background-color: #fcb360;
+}
+
+.operations:hover, #equals:hover, #backspace:hover, #clear:hover
+{
+    background-color: rgb(95, 95, 95);
 }

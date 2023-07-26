@@ -16,7 +16,7 @@ body
 {
     background-color: greenyellow;
     width: 80%;
-    min-height: 15%;
+    min-height: 16%;
     align-self: center;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -72,14 +72,14 @@ button
 
 #main
 {
-    font-size: 40px;
+    font-size: 43px;
     text-align: right;
     word-wrap: break-word;
 }
 
 #current
 {
-    font-size: 20px;
+    font-size: 23px;
     text-align: right;
     word-wrap: break-word;
 }

@@ -9,6 +9,19 @@ let numberArray = [];
 let result = 0;
 let lastOperation = '';
 
+document.addEventListener('keypress', function(event)
+{
+    if(event.key === "Enter")
+    {
+        const focusedElement = document.activeElement;
+        if(focusedElement.classList.contains("number"))
+        {
+            event.preventDefault();
+        }
+    
+    }
+})
+
 
 function add(a, b)
 {
@@ -86,6 +99,7 @@ function compute(operation)
                         main.innerText = result;
                     }
             }
+            
 }
 
 
@@ -132,7 +146,7 @@ operations.forEach(function(operation)
 
 
 function equalsWrite()
-{
+{   
     if(current.innerHTML != '')
             {
                 if(numberArray[0]== null)
@@ -259,8 +273,10 @@ document.addEventListener('keydown', (event)=>
         compute(lastOperation)
     }   
     else if(event.key == 'Enter')
-    {
+    {   
+        
         equalsWrite();
+        
     }
 })
 
